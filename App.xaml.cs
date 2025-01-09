@@ -1,4 +1,6 @@
-﻿namespace FutureWeather
+﻿using FutureWeather.MVVM.Views;
+
+namespace FutureWeather
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new WeatherView();
         }
     }
 }
